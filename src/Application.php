@@ -79,7 +79,7 @@ class Application extends \Phalcon\Mvc\Application
         foreach ($config['application']['modules'] as $module => $enabled) {
             $moduleName = ucfirst($module);
             $loadNamespaces[$moduleName . '\Model'] = APPLICATION_PATH . '/modules/' . $module . '/models/';
-            $loadNamespaces[$moduleName . '\Traits'] = APPLICATION_PATH . '/modules/' . $module . '/triats/';
+            $loadNamespaces[$moduleName . '\Traits'] = APPLICATION_PATH . '/modules/' . $module . '/traits/';
             $loadNamespaces[$moduleName . '\Service'] = APPLICATION_PATH . '/modules/' . $module . '/services/';
         }
 
